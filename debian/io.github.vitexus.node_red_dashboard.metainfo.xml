@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.github.vitexus.node_red_dashboard</id>
+  <extends>io.github.vitexus.node_red</extends>
+  <metadata_license>MIT</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <name>Node-RED Dashboard</name>
+  <summary>A set of dashboard nodes for Node-RED</summary>
+  <description>
+    <p>
+      Provides a set of nodes in Node-RED that can be used to create a live
+      data dashboard. The nodes include a set of UI widgets such as charts,
+      gauges, notifications, text inputs and more.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/node-red/node-red-dashboard</url>
+  <url type="bugtracker">https://github.com/node-red/node-red-dashboard/issues</url>
+  <url type="vcs-browser">https://github.com/Vitexus/node-red-dashboard</url>
+  <developer id="io.github.vitexus">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="3.6.6" date="2024-01-01"/>
+  </releases>
+</component>

@@ -13,6 +13,10 @@ override_dh_auto_install:
 	cp -a icons public debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/ 2>/dev/null || true
 	[ -d node_modules ] && install -d debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/node_modules && \
 		cp -a node_modules/. debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/node_modules/ || true
+	# AppStream metadata
+	install -d debian/node-red-dashboard/usr/share/metainfo
+	install -m 644 debian/io.github.vitexus.node_red_dashboard.metainfo.xml \
+		debian/node-red-dashboard/usr/share/metainfo/
 
 override_dh_shlibdeps:
 
