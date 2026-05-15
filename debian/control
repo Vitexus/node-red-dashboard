@@ -1,0 +1,17 @@
+Source: node-red-dashboard
+Section: javascript
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), nodejs (>= 20), npm
+Standards-Version: 4.6.2
+Homepage: https://github.com/node-red/node-red-dashboard
+Vcs-Git: https://github.com/Vitexus/node-red-dashboard.git
+Vcs-Browser: https://github.com/Vitexus/node-red-dashboard
+
+Package: node-red-dashboard
+Architecture: all
+Depends: ${misc:Depends}, node-red (>= 4.0)
+Description: A set of dashboard nodes for Node-RED
+ Provides a set of nodes in Node-RED that can be used to create a live
+ data dashboard. The nodes include a set of UI widgets such as chart,
+ gauge, notification, etc.

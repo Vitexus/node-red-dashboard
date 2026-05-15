@@ -1,0 +1,18 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: node-red-dashboard
+Upstream-Contact: team@nodered.org
+Source: https://github.com/node-red/node-red-dashboard
+
+Files: *
+Copyright: 2016-2024 OpenJS Foundation
+License: Apache-2.0
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+     http://www.apache.org/licenses/LICENSE-2.0
+ .
+ On Debian systems, the complete text of the Apache License 2.0 can
+ be found in /usr/share/common-licenses/Apache-2.0.

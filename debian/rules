@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	npm install --production --ignore-scripts
+
+override_dh_auto_install:
+	install -d debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard
+	cp -a *.js *.json nodes debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/ 2>/dev/null || true
+	cp -a icons public debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/ 2>/dev/null || true
+	[ -d node_modules ] && install -d debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/node_modules && \
+		cp -a node_modules/. debian/node-red-dashboard/usr/share/nodejs/node-red-dashboard/node_modules/ || true
+
+override_dh_shlibdeps:
+
+override_dh_strip:
